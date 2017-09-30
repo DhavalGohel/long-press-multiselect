@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="pkg.android.loon.imagegalaryNFB" version="1.2" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Image Galary NFB</name>
-    <description>Image Galary NFB Application</description>
+<widget id="pkg.android.loon.bulkitemaction" version="1.2" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Bulk Item Action</name>
+    <description>Bulk Item Action Application Demo</description>
     <content src="index.html" />
     <access origin="*" />
     <allow-navigation href="*" />
