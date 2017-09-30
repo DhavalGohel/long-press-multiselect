@@ -26,7 +26,7 @@ import { MyApp } from './app.component';
 import { SplashPage } from '../pages/splash/splash';
 import { DashboardPage } from '../pages/dashboard/dashboard';
 import { ConnectionPage } from '../pages/connection/connection';
-import { UploadImagePage } from '../pages/upload-image/upload-image';
+
 
 // Providers
 import { AppConfig, AppMsgConfig } from '../providers/AppConfig';
@@ -37,8 +37,7 @@ import { DashboardService } from '../providers/dashboard/dashboard-service';
     MyApp,
     SplashPage,
     DashboardPage,
-    ConnectionPage,
-    UploadImagePage
+    ConnectionPage
   ],
   imports: [
     BrowserModule,
@@ -59,8 +58,7 @@ import { DashboardService } from '../providers/dashboard/dashboard-service';
     MyApp,
     SplashPage,
     DashboardPage,
-    ConnectionPage,
-    UploadImagePage
+    ConnectionPage
   ],
   providers: [
     AppConfig,

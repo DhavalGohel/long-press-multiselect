@@ -5,6 +5,9 @@
     </button>
     <ion-title text-center>DASHBOARD</ion-title>
     <ion-buttons end>
+      <button ion-button icon-only end (click)="presentActionSheet()" *ngIf="mSelectedImageListId != null && mSelectedImageListId.length > 0">
+        <ion-icon name="md-more" ></ion-icon>
+      </button>
       <button ion-button icon-only (click)="changeView('grid')" *ngIf="view  == 'list'">
         <ion-icon name="grid" ></ion-icon>
       </button>
@@ -21,13 +24,13 @@
     </ion-refresher-content>
   </ion-refresher>
   <div *ngIf="view == 'list'">
-    <ion-card *ngFor="let image of mImageListData; let in of index" (click)="openImageView(in)">
+    <ion-card padding *ngFor="let image of mImageListData; let j = index" (tap)="openImageView(image)" (press)="longPress(image,j)" [ngClass]="image.isSelected ? 'grey-background' : 'white-background'">
       <img src="{{image.link}}" height="250px" />
     </ion-card>
   </div>
   <ion-grid *ngIf="view == 'grid'">
-    <ion-row *ngFor="let i of rows">
-      <ion-col *ngFor="let image of mImageListData | slice:(i*2):(i+1)*2; let in of index" (click)="openImageView(in)">
+    <ion-row *ngFor="let i of rows;" >
+      <ion-col *ngFor="let image of mImageListData | slice:(i*2):(i+1)*2;" (tap)="openImageView(image)" (press)="longPress(image,image.id)" [ngClass]="image.isSelected ? 'grey-background' : 'white-background'">
         <ion-card>
           <img src="{{image.link}}" height="150px" />
         </ion-card>

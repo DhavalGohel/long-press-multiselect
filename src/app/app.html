@@ -1,13 +1,13 @@
 <ion-menu type="overlay" [content]="content" class="side-menu">
   <ion-header menuClose padding class="header">
     <ion-item no-lines no-padding class="row">
-      <ion-thumbnail item-start no-margin class="char-name-main center_col" [ngClass]="'text_bg_a'">
+      <ion-thumbnail item-start no-margin class="char-name-main center_col" [ngClass]="'text_bg_i'">
         <h2 text-center class="name-char">
-           A
+           I
         </h2>
       </ion-thumbnail>
-      <h2 class="user-name">Dhaval Gohel</h2>
-      <p class="user-email">dhaval.gohel@sphererays.net</p>
+      <h2 class="user-name">Image Galary NFB</h2>
+      <p class="user-email">Image Galary NFB </p>
     </ion-item>
   </ion-header>
 
@@ -34,14 +34,6 @@
         </ion-avatar>
 
         {{item.title}}
-      </button>
-
-      <button menuClose ion-item text-uppercase no-padding class="menu-item" (click)="doLogout()">
-        <ion-avatar item-left class="menu-icon">
-          <img class="menu-icon-img" src="assets/icon/menu/logout.png" />
-        </ion-avatar>
-
-        Logout
       </button>
     </ion-list>
 

@@ -11,9 +11,6 @@ import { AppConfig} from '../providers/AppConfig';
 import { SplashPage } from '../pages/splash/splash';
 import { DashboardPage } from '../pages/dashboard/dashboard';
 
-import { UploadImagePage } from '../pages/upload-image/upload-image';
-
-
 @Component({
   templateUrl: 'app.html'
 })
@@ -53,6 +50,5 @@ export class MyApp {
   setMenuItems() {
     this.pages = [];
     this.pages.push({ title: 'Dashboard', component: DashboardPage, iconSrc: 'assets/icon/menu/dashboard.png' });
-    this.pages.push({ title: 'Upload Image', component: UploadImagePage, iconSrc: 'assets/icon/menu/receipt.png' });
   }
 }
